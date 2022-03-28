@@ -1,0 +1,183 @@
+
+/* css nav */
+
+body {background-color: black;}
+
+header{display: flex;}
+
+* {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.container {width: 80;
+    margin: 0 auto;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+    
+}
+
+nav ul tr:hover{ background-color:black;}
+
+nav{margin-left: auto;}
+
+nav ul>li >a {text-transform: uppercase;
+text-decoration: none;
+display: block;
+padding: 60px 30px;}
+
+
+
+/* css banner */
+section.banner {
+    /* animation: doinen 10s ease-in-out infinite; */
+    background-size: 100%;
+    background-repeat:none;
+
+}
+
+section.banner img{
+   /* visibility: hidden; */
+    width: 100%;
+}
+/*
+@keyframes doinen {
+    0% {
+        background-image:url(../imagecar/banner2.jpg) ;
+    }
+    30% { background-image:url(../imagecar/banner1.jpg) ;
+
+    }
+    70%{ background-image:url(../imagecar/banner3.jpg) ;
+
+    }
+} */
+
+div.carousel{
+    width: 100%;
+    
+    
+}
+
+
+section.subject {
+    background-color:goldenrod;
+    color:black;
+    padding: 20px;
+}
+
+section.subject  h1 { 
+    font-size: 3vw;
+    text-align: center;
+}
+
+
+/* css introduction*/
+
+section.introduction {background-color: goldenrod;
+color:black ;
+text-align: center;
+padding: 20px 40px ;
+}
+
+section.introduction2 { background-color:black;}
+
+
+section.introduction p {
+    margin-top: 50px;
+
+}
+
+h1 { font-size: 2vw;}
+h1.underline::after {
+    content:" ";
+    height: 5px;
+    width: 20%;
+    background-color:black ;
+    display: block;
+    padding: 30px auto ;
+    margin:10px auto;
+}
+
+div.items {
+    display:flex;
+}
+
+
+div.item {
+    width:25%;
+    padding:20px 1px;
+}
+div.item >div{background-color:goldenrod;
+padding: 5px;}
+
+div.item img {
+   max-width:100%; }
+
+div.item >div:hover {box-shadow:2px 3px 3px goldenrod;}
+
+
+
+
+/* css product*/
+
+
+section.product {background-color:goldenrod;
+    color:black;
+    text-align: center;
+    padding: 10px 30px ;}
+
+div.prods {display: flex;
+flex-wrap: wrap;}
+
+div.prod {width: 33%;}
+
+div.prod img{
+    max-width: 100%;
+}
+
+div.prod { padding: 2px;}
+
+div >h4{text-align: center;}
+
+
+
+
+/* CSS STATS*/
+
+section.stats {background-color:goldenrod ;
+color:  black;
+display: flex;
+text-align: center;}
+
+section.stats h1 {margin-top: 10px;
+margin-bottom: 5px;}
+
+div.stat { width: 25%;}
+
+
+
+/*css event*/
+
+section.event { color:black;
+    text-align: center;
+    margin: 10px auto;
+    background-color: goldenrod;
+    }
+
+div.evts {
+    display: flex;
+    background-color: goldenrod;
+}
+
+div.evts {padding: 5px;}
+
+div.evt { width: 25%;}
+
+div.evt { padding: 2px;}
+
+div.evt > iframe {width:100% ;}
+
+

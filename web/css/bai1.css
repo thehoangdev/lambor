@@ -1,0 +1,339 @@
+body {  /* background: linear-gradient(#C74B50,#712B75,#46244C) màu gradient; */
+    /* to right, to left, to top, to reght bottom - cách điều chỉnh chiều đi của màu */
+    background-image: url(desk.png); 
+  background-repeat: no-repeat;
+background-position: right;
+background: size 100%;;
+background-attachment: fixed;
+font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;}
+
+ body {
+      background-color:pink;
+    } 
+
+     h1 {
+      color:firebrick;
+      text-align: center;
+    } 
+
+    p {font-weight: bold;
+    font-size: 30px;
+  font-style: italic;}
+
+  p.t {text-transform: capitalize;/* dùng để chỉnh kiểu chữ in hoa hay chữ thường 
+    - dùng kiểu để chỉnh sửa chữ 
+    -dùng direction để điều chỉnh hướng đi */
+  text-decoration:overline;
+  direction: ltr;
+  background-color: brown;
+  padding: 20px 30px 40px 50px;
+  } 
+
+   /* p, h1 {color:red;} */
+
+    /* p{ color: brown;
+    font-size: 20px;} */
+
+   /* div p {color: gold;  lấy con cháu} 
+
+   /* div > p {color: blue; lấy con của div}  */
+
+   /*div + p {color: brown; lấy anh em gần nhất}  */
+   /* div ~p {color:chartreuse ;  lấy anh em} */ 
+
+   /* .test {color: blue; lấy các thành phần có class="test" gom nhóm để chỉ định chung 1 màu}*/
+
+   /* p.test {color: blue; chỉ lấy cái gom nhóm test có thẻ p - lấy những p có những cái là test} */
+
+    /* section.test {color: blue; chỉ lấy cái gom nhóm test có thẻ section} */
+      /* div ~ .test {color: blue; đuôi .test và con trực tiếp của div }  */
+
+     /* input[type=button] {background-color: coral;} */
+      /*input [type=button] lấy đúng input có type là buttonnếu input viết liền_ tách ra là khác nhau- 
+      lấy những cái type=button có trong input */
+      
+     /* #subject{font-size: 60px; color: lấy những thứ có id} */
+  
+  p.g {letter-spacing: 3px;
+    word-spacing: 10px;
+    line-height: 40px;
+    text-indent: 20px;
+    text-shadow: 2px 3px 3px yellow;/* tịnh tiến theo chiều ngang - dọc  - bóng mờ- màu */
+    background-color: brown;
+
+    border-style:solid;
+    border-bottom-style: dotted;
+    border-color: gold;
+    border-left-color: aqua;
+    border-right-color: chartreuse;
+    border-width: 20px;
+    border-right: 10px
+
+    border: 10px solid gold;/* độ dày - thể loại - màu */
+    border-radius: 40px 0 40px 0 /* đi theo chiều kim đồng hồ */;
+    box-shadow: 3px 5px 3px blue /* ngang - dọc - mờ - màu */;
+    outline:black 20px;
+    margin: 0 auto 
+              
+    
+  ;} 
+
+  p.f {
+    text-indent: 30px;
+    width: 600px;
+    background-color: lightsalmon;
+    color:brown;
+    padding: 50px 40px 20px 10px;;
+
+    
+    /*white-space: inherit; /*nếu dùng nowrap nó sẽ chạy 1 dòng dài kh xuống dòng*/
+  margin: 50px auto /* trên dưới 50px, trái phải auto - nó sẽ vào giữa */
+
+  }
+
+  p.d {text-align: center;text-indent: 30px;
+    width: 1000px;px;
+    background-color: lightsalmon;
+    color:antiquewhite ;
+    white-space: nowrap;
+    background-position: right; /*nếu dùng nowrap nó sẽ chạy 1 dòng dài kh xuống dòng*/}
+
+  p.s {text-indent: 30px;
+    width: 1000px;px;
+    background-color: lightsalmon;
+    color:brown ;
+    white-space: nowrap;
+    background-position: right; 
+    text-overflow: ellipsis; /* đây là dấu 3 chấm- ... */
+    overflow: hidden; /* dấu đi các phần không trong màu backgr */
+    /*nếu dùng nowrap nó sẽ chạy 1 dòng dài kh xuống dòng*/}
+
+    /*padding-top
+    padding-right
+    padding-bottom
+    padding-left
+    padding: top|right|bottom|left */
+
+    /* border-style
+    border-width
+    border-color
+    border: width|style|color */
+
+    /*Thuốc tính outline không được tính vào kích thước thành phần HTML.
+    outline-style
+    outline-color
+    outline-width
+    outline: width|style|color
+
+    (margin-top
+    margin-right
+    margin-bottom
+    margin-left
+    • margin toptright|bottom|teft
+    margin có thể nhận giá trị âm
+
+
+    Nist-style-type
+    list-style-position
+    list-style-image
+    list-style: type|position|image
+
+    Có thể dùng tất cả các CSS vào table.
+    ( border-collapse - đặc trưng của table
+    • verfical-align
+    width/height
+
+    Một liên kết có 4 trạng thái
+    a:link: liên kết bình thường, chưa click vào.
+    a:visited: liên kết đã từng được click vào.
+    (a:hover, rê chuột trên liên kết.
+    a:active: liên kết khi đang click trên link.
+
+    Chú ý trật tự viết CSS sau
+    a:hover phải nằm sau a:link và a:visited,
+    a:active phải năm sau a:hover.CSS 
+
+    
+  
+      height
+      width
+      line-height
+      max-height/min-height
+      max-width/min-width
+    
+      • overflow-x
+      • overflow-y
+      • oveflow
+      • Chú ý: thuộc tính này chỉ làm việc với các thành
+      phần HTML dạng block và có chiều cao xác định.
+      
+
+    
+    
+    */
+
+    table.mytable {border-collapse: collapse;}
+
+   /* table.mytable :nth-child(even) {background-color:lightgray; color: lightyellow;} /* thứ mấy trong n even cho chẵn, odd cho lẻ*/
+
+
+    table.mytable tr:hover{background-color: lightblue;
+    color: brown; /*khi mà rê chuột vào nó sẽ hiện sáng lên */}
+
+    table.mytable  tr:first-child {text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    background-color: bisque;}
+
+    table.mytable  tr:last-child {text-align:right;
+    font-weight: bold;
+    font-style: italic;
+    background-color:brown;}
+
+    table.mytable tr:nth-child(4) {
+    background-color: cornflowerblue;;
+    }
+
+    table.mytable tr:hover{background-color: lightblue;
+    color: brown; /*khi mà rê chuột vào nó sẽ hiện sáng lên */}
+
+    a{text-decoration: none;}
+    a:hover {text-decoration: underline;}
+
+    a:visited {color: crimson;}
+    a:active {color: aquamarine;} 
+
+    div.batman {width: 300px;
+    height: 200px;
+    background-color:aqua;
+    height: 100px;
+    overflow: auto;} /* cacs giá trị scroll, auto. hidden,*/
+
+    div.float {background-color: chartreuse;
+    overflow: auto;}
+
+    div.float > img {float:left;}
+
+    div.gototop{background-color: blueviolet; width: 100px;
+    padding: 10px;
+    }
+
+    a.gototopnhe{color: aliceblue;
+    width: 100px;
+    left: 10px;
+    bottom: 5px;
+    position: fixed;
+  }
+  div.position {display: flex;
+    flex-wrap: wrap;
+    flex-direction:row-reverse ;
+    align-items: center;
+
+  }
+  
+
+  div.position > div{
+    width: 24%;
+    height: 120px;
+    border: 2px dashed darkmagenta;
+    display: inline-block;
+  }
+
+  div.items { display: flex;
+  flex-wrap: wrap; /* khi mình muốn nó tự scale thành 1 dòng ta chọn display flex, muốn nó
+  để theo ý mình với with ban đầu, ta sử dụng wrap */}
+
+  div.item img{width: 100%;
+  transition: 1s ease-in;}
+
+  div.item img:hover {transform: scale(1.2);}
+
+  div.items >div {overflow: hidden;}
+
+  *{box-sizing: border-box; } /* nó sẽ tính luôn cái padding vaofwith, nó sẽ kh cộng trừ nhân chia gì nữa */
+
+  div.item {width: 32%;
+   /* margin: 0.5% /* khoảng cách giữa các cột hàng; */
+    /* padding: 5px; nó sẽ xử lý tiện hơn  */
+  background-color: orange;border: 2px solid blanchedalmond;
+  border-radius: 20px;
+  position:relative;}
+
+div.lable {position: absolute;
+top: 0;
+ right: 0;}
+
+  ul.menu {list-style-type: none;/* xóa đi mất các bulet */
+  padding: 0;
+  margin: 0;}
+
+  @keyframes doimau {From{background-color: blueviolet;} to{background-color: aquamarine;}
+    
+  }
+
+  ul.menu {list-style-type: none;/* xóa đi mất các bulet */
+  padding: 0;
+  margin: 0;
+  background-color:oldlace;
+  
+  justify-content:left;
+  animation: doimau 1s 10;
+ } 
+
+ ul.subcontent {list-style-type: none;/* xóa đi mất các bulet */
+  
+  background-color:oldlace;
+  
+
+ } 
+
+
+ nav > ul.menu{
+  display: flex;
+  border: none;
+ }
+
+
+ ul.menu >li :last-child { margin: auto;}
+
+  ul.menu >li  {max-width: 800px;
+   display: block;
+   padding: 20px;
+   border: 1px  solid;
+  }
+
+  .subcontent {display: none;}
+  .sub:hover .subcontent {display: block;
+  position: absolute;}
+ 
+
+  ul.menu >li >a:hover {text-decoration: none; /*bỏ đi phần gạch chân dưới siêu liên kết*/
+  background-color: #00008b;
+  color: goldenrod;
+}
+
+  ul.menu >li {max-width: 100%;}
+
+  @media screen and (max-width: 1500px) {
+      body{background-color:pink;}
+      
+  }
+
+  @media screen and (max-width: 900px) {
+      body{background-color: aliceblue;}
+      div.item {width: 49%;}
+  }
+  
+ @media screen and (max-width: 600px) { 
+     body {background-color: antiquewhite;}
+   
+ div.item {width: 99%;}  
+ }
+
+
+  nav >ul.menu{flex-direction: column;}
+
+  @media screen and(orientation: landscape){ body { font-family: Arial, Helvetica, sans-serif;
+color: darkmagenta;}
+      
+  }

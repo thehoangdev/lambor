@@ -1,0 +1,11 @@
+section.nav {background-color: cadetblue;}
+
+section.nav>ul {list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+section.nav >ul >li {
+    padding: 15px 8px;
+}

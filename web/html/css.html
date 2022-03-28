@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+div.position {display: flex;
+            flex-wrap: wrap;
+            flex-direction:row-reverse ;
+            align-items: center;
+
+          }
+          
+
+          div.position > div{
+            width: 24%;
+            height: 120px;
+            border: 2px dashed darkmagenta;
+            display: inline-block;
+          }
+
+          div.items { display: flex;
+          flex-wrap: wrap; /* khi mình muốn nó tự scale thành 1 dòng ta chọn display flex, muốn nó
+          để theo ý mình với with ban đầu, ta sử dụng wrap */}
+
+          div.item img{width: 100%;}
+
+          *{box-sizing: border-box; } /* nó sẽ tính luôn cái padding vaofwith, nó sẽ kh cộng trừ nhân chia gì nữa */
+
+          div.item {width: 32%;
+           /* margin: 0.5% /* khoảng cách giữa các cột hàng; */
+            /* padding: 5px; nó sẽ xử lý tiện hơn  */
+          background-color: orange;border: 2px solid blanchedalmond;}
+
+          ul.menu {list-style-type: none;/* xóa đi mất các bulet */
+          padding: 0%;
+          margin: 0%;}
+
+          ul.menu {list-style-type: none;/* xóa đi mất các bulet */
+          padding: 0%;
+          margin: 0%;
+          background-color:oldlace;
+          
+          justify-content:left;
+         } 
+
+         nav > ul.menu{
+          display: flex;
+          border: none;
+         }
+
+         ul.menu >li :last-child { margin: auto;}
+
+          ul.menu >li  {max-width: 800px;
+           display: block;
+           padding: 20px;
+           border: 1px  solid;
+          }
+          .subcontent {display: none;}
+          .sub:hover .subcontent
+         
+          
+
+          ul.menu >li >a:hover {text-decoration: none; /*bỏ đi phần gạch chân dưới siêu liên kết*/
+          background-color: darkblue;
+        color: goldenrod;}
+          
+          
+
+</style>
+
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+          <li><a href="#">Trang Chủ</a></li>
+
+          <li><a href="#">Danh Sách Môn Học</a>
+          <ul class="subcontent">
+            <li><a  href="#">THIẾT KẾ WEB</a></li>
+            <li><a  href="#">LẬP TRÌNH</a></li>
+            <li><a  href="#">LẬP TRÌNH JAVA</a></li>
+          </ul>
+          </li>
+
+          <li><a href="#">Diễn Đàn</a></li>
+          <li><a href="#">Liên Hệ</a></li>
+          <li><a href="#">Đăng Nhập</a></li>
+          <li><a href="#">Đăng Ký</a></li>
+        </ul>
+</nav>
+
+
+</body>
